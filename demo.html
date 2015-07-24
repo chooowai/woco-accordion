@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<script src="jquery-1.11.3.min.js"></script>
+		<script src="woco.accordion.min.js"></script>
+		<link href="woco-accordion.min.css" rel="stylesheet">
+		<style>
+			body
+			{
+				font-family: sans-serif;
+			}
+			.accordion
+			{
+				max-width: 300px;
+				margin: 5px auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="accordion">
+			<h1>Section 1</h1>
+			<div>
+				Content 1<br>Content 1<br>Content 1<br>Content 1<br>
+			</div>
+			<h1>Section 2</h1>
+			<div>
+				Content 2<br>Content 2<br>Content 2<br>Content 2<br>
+			</div>
+			<h1>Section 3</h1>
+			<div>
+				Content 3<br>Content 3<br>Content 3<br>Content 3<br>
+			</div>
+		</div>
+		<script>
+			$(".accordion").accordion();
+		</script>
+	</body>
+</html>

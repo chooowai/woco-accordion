@@ -1,0 +1,156 @@
+<html>
+	<head>
+		<script src="jquery-1.11.3.min.js"></script>
+		<script src="woco.accordion.min.js"></script>
+		<link href="woco-accordion.css" rel="stylesheet">
+		<style>
+			body
+			{
+				font-family: sans-serif;
+				max-width: 860px;
+				margin: 5px auto;
+				padding: 10px;
+				border: 1px solid green;
+				border-radius: 5px;
+			}
+			.accordion
+			{
+				width: 300px;
+				margin: 10px;
+				float: left;
+			}
+			h2
+			{
+				text-align: center;
+				color: green;
+				margin-bottom: 0px;
+			}
+			h3
+			{
+				color: green;
+				font-weight: 105;
+				padding-top: 10px;
+				margin-bottom: 0px;
+				clear: both;
+			}
+			hr
+			{
+				border: none;
+				border-bottom: 1px solid green;
+			}
+			code
+			{
+				display: block;
+				margin: 5px 0px;
+				padding: 0px 20px;
+				font-size: 15px;
+				color: gray;		
+				border-left: 3px solid green;
+				background-color: rgba(248, 248, 248, 0.5);
+			}
+			.dark-blue
+			{
+				color: #069;
+				font-weight: bold;
+			}
+			.string
+			{
+				color: blue;
+			}
+			#intro
+			{
+				padding: 5px 10px;	
+				line-height: 1.4em;		
+			}
+			ul
+			{
+				-webkit-padding-start: 0px;
+				-moz-padding-start: 0px;
+				-khtml-padding-start: 0px;
+				-o-padding-start: 0px;
+				padding-start: 0px;		
+			}
+			ul code
+			{
+				padding-left: 40px;
+			}
+			ul ul code
+			{
+				padding-left: 80px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Woco Accordion jQuery plugin</h2>
+		<h3>Introduction</h3><hr>
+		<div class="accordion">
+			<h1>Section 1</h1>
+			<div>
+				Content 1<br>Content 1<br>Content 1<br>Content 1<br>
+			</div>
+			<h1>Section 2</h1>
+			<div>
+				Content 2<br>Content 2<br>Content 2<br>Content 2<br>
+			</div>
+			<h1>Section 3</h1>
+			<div>
+				Content 3<br>Content 3<br>Content 3<br>Content 3<br>
+			</div>
+		</div>
+		<p id="intro">
+			A simple, user-friendly and lightweight jQuery accordion plugin with smooth animations powered by CSS3 transitions.<br>It was based on the <b>Minimal Accordion/Drawer Plugin with jQuery and CSS3</b> developed by alxndrwcz.<br>
+			This plugin is licensed under MIT and anyone can freely use it, copy it and modify it.
+		</p>
+		<h3>How to use it</h3>
+		<hr>
+		
+		<ol>
+			<li>Include the Woco Accordion plugin’s CSS in the header.</li>
+			<code>&lt;<span class="dark-blue">link</span> href=<span class="string">"woco.accordion.css"</span> rel=<span class="string">"stylesheet"</span>&gt;</code>
+			<li>Include the Woco Accordion plugin’s JavaScript after you have loaded jQuery library.</li>
+			<code>&lt;<span class="dark-blue">script</span> src=<span class="string">"woco.accordion.js"</span>&gt;&lt;<span class="dark-blue">script&gt;</code>
+			<li>Create a DIV element which contains pairs of H1 element and DIV element.</li>
+			<code>&lt;<span class="dark-blue">div</span> class=<span class="string">"accordion"</span>&gt;</code>
+			<ul>
+				
+			<code>&lt;<span class="dark-blue">h1</span>&gt;Section 1&lt;/<span class="dark-blue">h1</span>&gt;</code>
+			<code>&lt;<span class="dark-blue">div</span>&gt;</code>
+			<ul><code>Content 1&lt;br&gt;Content 1&lt;br&gt;Content 1&lt;br&gt;Content 1&lt;br&gt;</code></ul>
+			<code>&lt;/<span class="dark-blue">div</span>&gt;</code>
+			
+			<code>&lt;<span class="dark-blue">h1</span>&gt;Section 2&lt;/<span class="dark-blue">h1</span>&gt;</code>
+			<code>&lt;<span class="dark-blue">div</span>&gt;</code>
+			<ul><code>Content 2&lt;br&gt;Content 2&lt;br&gt;Content 2&lt;br&gt;Content 2&lt;br&gt;</code></ul>
+			<code>&lt;/<span class="dark-blue">div</span>&gt;</code>
+			
+			<code>&lt;<span class="dark-blue">h1</span>&gt;Section 3&lt;/<span class="dark-blue">h1</span>&gt;</code>
+			<code>&lt;<span class="dark-blue">div</span>&gt;</code>
+			<ul><code>Content 3&lt;br&gt;Content 3&lt;br&gt;Content 3&lt;br&gt;Content 3&lt;br&gt;</code></ul>
+			<code>&lt;/<span class="dark-blue">div</span>&gt;</code>
+			
+			</ul>
+			<code>&lt;<span class="dark-blue">/div</span>&gt;</code>
+			
+			
+			<li>Initialize the plugin.</li>
+			<code><span class="dark-blue">$</span>(<span class="string">".accordion"</span>).<span class="dark-blue">accordion()</span>;</code>
+			<div style="margin-top: 13px;margin-bottom: 10px;">OR</div>
+			Initialize the plugin with options.
+			<code><span class="dark-blue">$</span>(<span class="string">".accordion"</span>).<span class="dark-blue">accordion({</span></code>
+			<ul>
+				<code>//whether expanding mulitple section is allowed or not</code>
+				<code><span class="dark-blue">multiExpand</span>: <span style="color:red">false</span>,</code>
+				<code>//slide animation speed</code>
+				<code><span class="dark-blue">slideSpeed</span>: <span class=dark-blue>500</span>,</code>
+				<code>//drop down icon</code>
+				<code><span class="dark-blue">dropDownIcon</span>: <span class=string>"&<span></span>#9660"</span>,</code>
+			</ul>
+			<code><span class="dark-blue">})</span>;</code>
+		</ol>
+		<h3>Contact Me</h3><hr>
+		<p>If you found any bug, wanna suggest or ask new features or for other reasons, contact me at <a href="mailto:chooowai@yahoo.com">choooowai@yahoo.com</a></p>
+		<script>
+			$(".accordion").accordion();
+		</script>
+	</body>
+</html>
