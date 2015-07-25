@@ -78,6 +78,26 @@
 			{
 				padding-left: 80px;
 			}
+			.button
+			{
+				display: inline-block;
+				border: 1px solid black;
+				margin-right: 5px;
+				padding: 5px;
+				border-radius: 5px;
+				text-decoration: none;
+				background-color: rgb(240,240,240);
+				color: black;
+				box-shadow: -1px -1px 1px 0px black;
+			}
+			.button:visited
+			{
+				color:black;
+			}
+			.button:hover
+			{
+				box-shadow: -1px -1px 3px 1px black;
+			}
 		</style>
 	</head>
 	<body>
@@ -101,9 +121,15 @@
 			A simple, user-friendly and lightweight jQuery accordion plugin with smooth animations powered by CSS3 transitions.<br>It was based on the <b>Minimal Accordion/Drawer Plugin with jQuery and CSS3</b> developed by alxndrwcz.<br>
 			This plugin is licensed under MIT and anyone can freely use it, copy it and modify it.
 		</p>
-		<h3>How to use it</h3>
-		<hr>
 		
+		<h3>Download</h3><hr>
+			<a href="https://github.com/chooowai/woco-accordion/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+
+			<a href="https://github.com/chooowai/woco-accordion/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+
+			<a href="https://github.com/chooowai/woco-accordion" id="view-on-github" class="button"><span>View on GitHub</span></a>
+		<h3>How to use it</h3>
+		<hr>	
 		<ol>
 			<li>Include the Woco Accordion plugin’s CSS in the header.</li>
 			<code>&lt;<span class="dark-blue">link</span> href=<span class="string">"woco.accordion.css"</span> rel=<span class="string">"stylesheet"</span>&gt;</code>
@@ -148,7 +174,7 @@
 			<code><span class="dark-blue">})</span>;</code>
 		</ol>
 		<h3>Contact Me</h3><hr>
-		<p>If you found any bug, wanna suggest or ask new features or for other reasons, contact me at <a href="mailto:chooowai@yahoo.com">choooowai@yahoo.com</a></p>
+		<p>If you found any bug, wanna suggest or ask new features or for other reasons, contact me at <a href="mailto:chooowai@yahoo.com">choooowai@yahoo.com</a>.</p>
 		<script>
 			$(".accordion").accordion();
 		</script>
