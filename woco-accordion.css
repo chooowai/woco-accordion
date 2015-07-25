@@ -12,16 +12,18 @@
 {
 	background:#888;
 	transition:.25s;
-	color:#fff;
 }
 .accordion-item-active .accordion-header-icon
+{
+	color:#fff;
+}
+.accordion-item-active .accordion-header h1
 {
 	color:#fff;
 }
 .accordion-header
 {
 	background:#f2f2f2;
-	color:#212121;
 	padding:12px;
 	cursor:pointer;
 	border-right:1px solid #E0E0E0;
@@ -36,6 +38,7 @@
 	font-weight: normal;
 	margin:0;
 	line-height: 1.3em;
+	color:#212121;
 }
 .accordion-content
 {
@@ -65,5 +68,6 @@
 {
 	-webkit-transform:rotate(180deg);
 	-ms-transform:rotate(180deg);
-	transform:rotate(180deg)
+	transform:rotate(180deg);
+	color:#fff;
 }
