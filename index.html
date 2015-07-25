@@ -6,12 +6,17 @@
 		<style>
 			body
 			{
+				background-color: black;
+			}
+			#main-body
+			{
 				font-family: sans-serif;
 				max-width: 860px;
 				margin: 5px auto;
 				padding: 10px;
-				border: 1px solid green;
-				border-radius: 5px;
+				border: 5px solid green;
+				border-radius: 10px;
+				background-color: white;
 			}
 			.accordion
 			{
@@ -19,11 +24,19 @@
 				margin: 10px;
 				float: left;
 			}
+			@media (max-width: 350px)
+			{
+				.accordion
+				{
+					width: 93%;
+				}
+			}
 			h2
 			{
 				text-align: center;
 				color: green;
 				margin-bottom: 0px;
+				margin-top: 15px;
 			}
 			h3
 			{
@@ -101,6 +114,7 @@
 		</style>
 	</head>
 	<body>
+	<div id="main-body">
 		<h2>Woco Accordion jQuery plugin</h2>
 		<h3>Introduction</h3><hr>
 		<div class="accordion">
@@ -178,5 +192,6 @@
 		<script>
 			$(".accordion").accordion();
 		</script>
+	</div>
 	</body>
 </html>
