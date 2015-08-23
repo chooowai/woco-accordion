@@ -27,7 +27,7 @@
 			{
 				width: 300px;
 				margin: 10px;
-				float: left;
+				float: left;			
 			}
 			@media (max-width: 350px)
 			{
@@ -116,6 +116,10 @@
 			{
 				box-shadow: -1px -1px 3px 1px black;
 			}
+			a, a:visited
+			{
+				color: blue;
+			}
 		</style>
 	</head>
 	<body>
@@ -137,16 +141,22 @@
 			</div>
 		</div>
 		<p id="intro">
-			A simple, user-friendly and lightweight jQuery accordion plugin with smooth animations powered by CSS3 transitions.<br>It was based on the <b>Minimal Accordion/Drawer Plugin with jQuery and CSS3</b> developed by alxndrwcz.<br>
-			This plugin is licensed under MIT and anyone can freely use it, copy it and modify it.
+			A simple, user-friendly and lightweight jQuery accordion plugin with smooth animations powered by CSS3 transitions.<br>
+			It was based on the <b>Minimal Accordion/Drawer Plugin with jQuery and CSS3</b> developed by alxndrwcz.<br>
+			This plugin is licensed under MIT and anyone can freely use it, copy it and modify it.<br> 
+			New updates are always released with new features and fixes.<br>
+			The latest version at this time is version_3.1.<br>
+			Please like <a href="https://www.facebook.com/wocoaccordion">Woco Accordion Facebook page</a> to check for new versions and updates.
 		</p>
 		
 		<h3>Download</h3><hr>
-			<a href="https://github.com/chooowai/woco-accordion/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+			<a href="https://github.com/chooowai/woco-accordion/zipball/master" id="download-zip" class="button"><span>version_3.1 .zip</span></a>
 
-			<a href="https://github.com/chooowai/woco-accordion/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+			<a href="https://github.com/chooowai/woco-accordion/tarball/master" id="download-tar-gz" class="button"><span>version_3.1 .tar.gz</span></a>
 
 			<a href="https://github.com/chooowai/woco-accordion" id="view-on-github" class="button"><span>View on GitHub</span></a>
+		<h3>News</h3><hr>
+			Woco Accordion version_3.1 is released with a new option that can expand the first section. 
 		<h3>How to use it</h3>
 		<hr>	
 		<ol>
@@ -183,6 +193,8 @@
 			Initialize the plugin with options.
 			<code><span class="dark-blue">$</span>(<span class="string">".accordion"</span>).<span class="dark-blue">accordion({</span></code>
 			<ul>
+				<code>//whether the first section is expanded or not</code>
+				<code><span class="dark-blue">firstChildExpand</span>: <span style="color:red">true</span>,</code>
 				<code>//whether expanding mulitple section is allowed or not</code>
 				<code><span class="dark-blue">multiExpand</span>: <span style="color:red">false</span>,</code>
 				<code>//slide animation speed</code>
