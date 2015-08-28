@@ -2,7 +2,7 @@
 	<head>
 		<title>Woco Accordion</title>
 		<link rel="icon" href="img/woco.ico">
-		<link rel="shortcut icon" href="img/logo.ico">
+		<link rel="shortcut icon" href="img/woco.ico">
 		<script src="jquery-1.11.3.min.js"></script>
 		<script src="woco.accordion.min.js"></script>
 		<link href="woco-accordion.css" rel="stylesheet">
@@ -18,10 +18,10 @@
 				font-family: sans-serif;
 				max-width: 860px;
 				margin: 0px auto;
-				padding: 10px;
+				padding: 0px 10px;
 				border: 1px dotted green;
 				background-color: white;
-				padding-top: 20px;
+				/*padding-top: 20px;*/
 			}
 			.accordion
 			{
@@ -39,9 +39,11 @@
 			h2
 			{
 				text-align: center;
-				color: green;
-				margin-bottom: 0px;
-				margin-top: 15px;
+				margin-bottom: 0px;				
+				color: white; 
+				line-height: 2em; 
+				font-weight: 100; 
+				font-family: monospace;
 			}
 			h3
 			{
@@ -123,8 +125,11 @@
 		</style>
 	</head>
 	<body>
+	
 	<div id="main-body">
-		<h2>Woco Accordion jQuery plugin</h2>
+		<div style="background-color: #075e00;">
+			<h2>Woco Accordion jQuery plugin</h2>
+		</div>
 		<h3>Introduction</h3><hr>
 		<div class="accordion">
 			<h1>Section 1</h1>
@@ -206,7 +211,7 @@
 		</ol>
 		<h3>Contact Me</h3><hr>
 		<p>If you wanna ask questions or found any bug or wanna suggest or ask new features or for other reasons, contact me at <a href="mailto:chooowai@yahoo.com">chooowai@yahoo.com</a>.</p>
-		<!-- Counter Code START --><span style="font-size: 16px;">Visitors per day </span><a href="http://www.e-zeeinternet.com/" target="_blank"><img src="http://www.e-zeeinternet.com/count.php?page=1118406&style=default&nbdigits=5" alt="Free Counter" border="0" style="vertical-align: middle;"></a><!-- Counter Code END -->
+		<!-- Counter Code START --><span style="font-size: 16px;">Total visitors </span><a href="http://www.e-zeeinternet.com/" target="_blank"><img src="http://www.e-zeeinternet.com/count.php?page=1118406&style=default&nbdigits=5" alt="Free Counter" border="0" style="vertical-align: middle;"></a><!-- Counter Code END -->
 		<script>
 			$(".accordion").accordion();
 		</script>
