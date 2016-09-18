@@ -49,5 +49,9 @@
 			);	
 		});
 		}
+		$.fn.openSection = function(index)
+		{
+			$(".accordion").find(".accordion-header").filter(function(indexx){return indexx==index;}).click();
+		}
 	}
 (jQuery));
